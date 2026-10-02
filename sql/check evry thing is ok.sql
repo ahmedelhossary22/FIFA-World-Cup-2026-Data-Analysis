@@ -1,0 +1,66 @@
+USE FIFA_WorldCup_2026;
+GO
+
+/* =========================================================
+   1. CHECK ALL 7 TABLES
+   ========================================================= */
+
+SELECT 
+    TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+AND TABLE_NAME IN (
+    'Teams',
+    'Players',
+    'Stadiums',
+    'Matches',
+    'MatchStatistics',
+    'PlayerPhysicalStats',
+    'Goals'
+)
+ORDER BY TABLE_NAME;
+
+
+/* =========================================================
+   2. CHECK PRIMARY KEYS
+   ========================================================= */
+
+SELECT
+    TABLE_NAME,
+    COLUMN_NAME,
+    CONSTRAINT_NAME
+FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE TABLE_NAME IN (
+    'Teams',
+    'Players',
+    'Stadiums',
+    'Matches',
+    'MatchStatistics',
+    'PlayerPhysicalStats',
+    'Goals'
+)
+AND CONSTRAINT_NAME LIKE 'PK%'
+ORDER BY TABLE_NAME;
+
+
+/* =========================================================
+   3. CHECK FOREIGN KEYS
+   ========================================================= */
+
+SELECT
+    fk.name AS ForeignKeyName,
+    OBJECT_NAME(fk.parent_object_id) AS ChildTable,
+    COL_NAME(fkc.parent_object_id, fkc.parent_column_id) AS ChildColumn,
+    OBJECT_NAME(fk.referenced_object_id) AS ParentTable,
+    COL_NAME(fkc.referenced_object_id, fkc.referenced_column_id) AS ParentColumn
+FROM sys.foreign_keys AS fk
+INNER JOIN sys.foreign_key_columns AS fkc
+    ON fk.object_id = fkc.constraint_object_id
+WHERE OBJECT_NAME(fk.parent_object_id) IN (
+    'Players',
+    'Matches',
+    'MatchStatistics',
+    'PlayerPhysicalStats',
+    'Goals'
+)
+ORDER BY ChildTable, ForeignKeyName;
