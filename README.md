@@ -1,4 +1,4 @@
-# ⚽ FIFA World Cup 2026 — End-to-End Data Analytics Project
+# FIFA World Cup 2026 — End-to-End Data Analytics Project
 
 > **An end-to-end football analytics project covering data collection, data cleaning, integration, SQL analysis, Excel analysis, and an interactive Power BI dashboard.**
 
@@ -9,7 +9,7 @@
 ![Excel](https://img.shields.io/badge/Excel-Analysis-217346?logo=microsoftexcel&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is a complete **FIFA World Cup 2026 data analytics pipeline** designed to transform raw football data into structured datasets, analytical outputs, and interactive business-style visualizations.
 
@@ -19,7 +19,7 @@ The main objective is to demonstrate an end-to-end data workflow rather than per
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Collect football data from multiple sources.
 - Build clean and structured datasets for analysis.
@@ -34,7 +34,7 @@ The main objective is to demonstrate an end-to-end data workflow rather than per
 
 ---
 
-## 📊 Data Coverage
+##  Data Coverage
 
 The project contains datasets covering:
 
@@ -67,7 +67,7 @@ The project contains datasets covering:
 
 ---
 
-## 🔄 Data Pipeline
+## Data Pipeline
 
 ```text
 Multiple Data Sources
@@ -98,7 +98,7 @@ Data Integration
 
 ---
 
-## 🐍 Python & Data Collection
+##  Python & Data Collection
 
 The project uses a sequence of Jupyter Notebooks to collect and prepare the datasets:
 
@@ -127,7 +127,7 @@ The project uses a sequence of Jupyter Notebooks to collect and prepare the data
 
 ---
 
-## 🗄️ SQL Analysis
+## SQL Analysis
 
 The project includes a SQL database structure with table creation and data insertion scripts, followed by analytical queries.
 
@@ -155,7 +155,7 @@ The `sql/` folder contains:
 
 ---
 
-## 📈 Excel Analysis
+##  Excel Analysis
 
 The `excel/` folder contains the Excel analysis workbook and supporting datasets.
 
@@ -171,7 +171,7 @@ The Excel analysis provides additional summaries and analytical views of:
 
 ---
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 The project includes an interactive Power BI dashboard:
 
@@ -200,7 +200,7 @@ It summarizes the project methodology, analytical process, and key outputs.
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```text
 FIFA_WorldCup_2026_Project/
@@ -243,7 +243,7 @@ FIFA_WorldCup_2026_Project/
 │
 ├── dashboard/
 │   ├── fifa world cup.pbix
-│   └── deneb.standalone.2.0.0.0.pbiviz
+│   
 │
 └── presentation/
     └── FIFA_WorldCup_2026_Presentation.pptx
@@ -251,7 +251,7 @@ FIFA_WorldCup_2026_Project/
 
 ---
 
-## 🛠️ Technologies & Skills
+## Technologies & Skills
 
 **Programming & Analysis**
 
@@ -287,7 +287,7 @@ FIFA_WorldCup_2026_Project/
 
 ---
 
-## 🚀 How to Run the Python Analysis
+##  How to Run the Python Analysis
 
 ### 1. Clone the repository
 
@@ -314,7 +314,7 @@ Open the notebooks inside the `Notebooks/` folder and run them in sequence.
 
 ---
 
-## 📌 Recommended Workflow
+##  Recommended Workflow
 
 For reproducing the project from the beginning:
 
@@ -329,7 +329,7 @@ For reproducing the project from the beginning:
 
 ---
 
-## 💡 What This Project Demonstrates
+## What This Project Demonstrates
 
 This project demonstrates practical experience with a complete analytics workflow:
 
@@ -339,18 +339,18 @@ It also demonstrates the ability to work with multiple related datasets and comb
 
 ---
 
-## 📎 Project Deliverables
+##  Project Deliverables
 
-- 🐍 Python/Jupyter data-collection and analysis notebooks.
-- 📁 Cleaned and integrated datasets.
-- 🗄️ SQL database scripts and analytical queries.
-- 📊 Power BI interactive dashboard.
-- 📈 Excel analysis workbook.
-- 🎤 Project presentation.
+-  Python/Jupyter data-collection and analysis notebooks.
+-  Cleaned and integrated datasets.
+-  SQL database scripts and analytical queries.
+-  Power BI interactive dashboard.
+-  Excel analysis workbook.
+-  Project presentation.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Ahmed Elhossary**
 
@@ -360,6 +360,6 @@ Interested in **Data Science, Machine Learning, AI Automation, and Data Analytic
 
 ---
 
-## ⭐ If you find this project useful
+##  If you find this project useful
 
 Feel free to explore the notebooks, SQL analysis, dashboard, and datasets to understand the complete workflow from raw football data to final analytical insights.
